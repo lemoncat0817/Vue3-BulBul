@@ -3,7 +3,7 @@
     <div class="siteName">白頭翁不吃小米</div>
     <ul class="nav">
       <li v-for="(item, index) in navText" :key="item.text" @click="toggleActive(index)">
-        <a href="#" :class="{ active: activeIndex === index }">
+        <a href="JavaScript:;" :class="{ active: activeIndex === index }">
           {{ item.text }}
         </a>
       </li>
