@@ -1,47 +1,47 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <div class="layout">
+    <div class="layout-left">
+      <SideBar />
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <div class="layout-right">
+      <Banner class="banner" />
+      <Paragraphs class="paragraphs" />
+    </div>
+  </div>
 </template>
 
+<script setup>
+import SideBar from './components/sidebar/index.vue'
+import Banner from './components/banner/index.vue'
+import Paragraphs from './components/paragraphs/index.vue'
+</script>
+
+
+
 <style scoped>
-header {
-  line-height: 1.5;
+.layout {
+  width: 1440px;
+  height: 1002px;
+  display: flex;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.layout-left {
+  width: 345px;
+  height: 1002px;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.layout-right {
+  width: 1095px;
+  height: 1002px;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.banner {
+  width: 100%;
+  height: 634.85px;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.paragraphs {
+  width: 100%;
+  height: 367.15px;
 }
 </style>
