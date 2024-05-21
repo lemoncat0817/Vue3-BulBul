@@ -4,8 +4,8 @@
       <SideBar />
     </div>
     <div class="layout-right">
-      <Banner class="banner" />
-      <Paragraphs class="paragraphs" />
+      <Banner class="layoutBanner" />
+      <Paragraphs class="layoutParagraphs" />
     </div>
   </div>
 </template>
@@ -35,12 +35,12 @@ import Paragraphs from './components/paragraphs/index.vue'
   height: 1002px;
 }
 
-.banner {
+.layoutBanner {
   width: 100%;
   height: 634.85px;
 }
 
-.paragraphs {
+.layoutParagraphs {
   width: 100%;
   height: 367.15px;
 }
