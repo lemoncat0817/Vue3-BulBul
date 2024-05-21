@@ -41,7 +41,6 @@
   height: 225px;
   top: 693px;
   left: 395.74px;
-  padding: 0px 0px 49px 5px;
   gap: 0px;
   opacity: 0px;
 }
@@ -52,7 +51,6 @@
   height: 225px;
   top: 693px;
   left: 753.25px;
-  padding: 0px 0px 93px 5px;
   gap: 0px;
   opacity: 0px;
 
@@ -64,7 +62,6 @@
   height: 225px;
   top: 693px;
   left: 1110.75px;
-  padding: 0px 0px 115px 5px;
   gap: 0px;
   opacity: 0px;
 }

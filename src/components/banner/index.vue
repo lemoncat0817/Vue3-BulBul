@@ -1,5 +1,4 @@
 <template>
-
   <div class="banner">
     <div class="bannerImgBox">
       <img src="@/assets/banner/banner.png" alt="Banner">
@@ -23,8 +22,8 @@
 
 .bannerImgBox {
   margin-top: 0.64px;
-  width: 1095px;
-  height: 634.21px;
+  width: 100%;
+  height: calc(100% - 0.64px);
   gap: 0px;
   opacity: 0px;
   background: #C4C4C4;
