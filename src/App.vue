@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <Logo class="layoutLogo" />
     <div class="layout-left">
       <SideBar class="layoutSideBar" />
     </div>
@@ -14,6 +15,7 @@
 import SideBar from './components/sidebar/index.vue'
 import Banner from './components/banner/index.vue'
 import Paragraphs from './components/paragraphs/index.vue'
+import Logo from './components/logo/index.vue'
 </script>
 
 
@@ -23,6 +25,20 @@ import Paragraphs from './components/paragraphs/index.vue'
   width: 1440px;
   height: 1002px;
   display: flex;
+}
+
+.layoutLogo {
+  position: absolute;
+  width: 97.56px;
+  height: 97.04px;
+  top: 47.31px;
+  left: 296.22px;
+  gap: 0px;
+  opacity: 0px;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: 0px 0px 6px 0px #00000040;
+  border-radius: 50%;
 }
 
 .layout-left {
