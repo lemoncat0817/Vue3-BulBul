@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <Header class="layoutHeader" />
     <Logo class="layoutLogo" />
     <div class="layout-left">
       <SideBar class="layoutSideBar" />
@@ -16,15 +17,19 @@ import SideBar from './components/sidebar/index.vue'
 import Banner from './components/banner/index.vue'
 import Paragraphs from './components/paragraphs/index.vue'
 import Logo from './components/logo/index.vue'
+import Header from './components/header/index.vue'
 </script>
 
 
 
 <style scoped>
 .layout {
-  width: 1440px;
-  height: 1002px;
-  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.layoutHeader {
+  width: 100vw;
 }
 
 .layoutLogo {
@@ -48,21 +53,54 @@ import Logo from './components/logo/index.vue'
 
 .layoutSideBar {
   width: 100%;
-  height: 100%;
 }
 
 .layout-right {
-  width: 1095px;
+  width: calc(100vw - 345px);
   height: 100%;
 }
 
-.layoutBanner {
-  width: 100%;
-  height: calc(100% - 367.15px);
+/* 響應式設計 */
+/* 1024px~1280px */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .layoutLogo {
+    position: fixed;
+  }
 }
 
-.layoutParagraphs {
-  width: 100%;
-  height: calc(100% - 634.85px);
+/* 1024px以下 */
+@media (max-width: 1024px) {
+  .layoutLogo {
+    position: fixed;
+  }
+}
+
+/* 769以上 */
+@media (min-width: 769px) {
+  .layoutHeader {
+    display: none;
+  }
+
+  .layout-right {
+    position: absolute;
+    left: 345px;
+    top: 0;
+  }
+}
+
+/* 768px以下 */
+@media (max-width: 768px) {
+  .layout-left {
+    display: none;
+  }
+
+  .layoutLogo {
+    display: none;
+  }
+
+  .layout-right {
+    width: 100vw;
+    left: 0px;
+  }
 }
 </style>

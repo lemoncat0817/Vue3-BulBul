@@ -41,7 +41,7 @@ const navText = ref([{
 <style scoped>
 .sidebar {
   width: 100%;
-  height: 100%;
+  height: 1002px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px 0px #00000040;
   position: relative;
@@ -53,8 +53,6 @@ const navText = ref([{
   height: 41px;
   top: 78.33px;
   left: 67.5px;
-  gap: 0px;
-  opacity: 0px;
   font-family: Noto Sans;
   font-size: 30px;
   font-weight: 700;
@@ -67,8 +65,6 @@ const navText = ref([{
   position: absolute;
   top: 195px;
   left: 109px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 .nav li {
@@ -96,8 +92,6 @@ const navText = ref([{
   width: 127.15px;
   height: 25px;
   left: -9.75px;
-  gap: 0px;
-  opacity: 0px;
   font-family: Noto Sans;
   font-size: 18px;
   font-weight: 700;
@@ -105,5 +99,20 @@ const navText = ref([{
   text-align: center;
   color: #AA6666;
   text-decoration: underline 2px #AA6666
+}
+
+/* 響應式設計 */
+/* 1024px~1280px */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .sidebar {
+    position: fixed;
+  }
+}
+
+/* 1024px以下 */
+@media (max-width: 1024px) {
+  .sidebar {
+    position: fixed;
+  }
 }
 </style>
