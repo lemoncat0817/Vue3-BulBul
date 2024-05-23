@@ -1,35 +1,37 @@
 # Vue3-BulBul
 
-This template should help get you started developing with Vue 3 in Vite.
+這是一個使用Vue3、和Vite構建的網站。
 
-## Recommended IDE Setup
+## Demo網站
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+https://lemoncat0817.github.io/Vue3-BulBul/
 
-## Customize configuration
+## 使用的技術
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1.框架採用 Vue3 。
 
-## Project Setup
+2.採用RWD響應式設計提高用戶使用體驗。
+
+3.使用 Vite 作為快速的 Vue 開發工具。
+
+# 安裝與運行
+
+確保你已安裝了Node.js和pnpm。
+
+## 安裝依賴
 
 ```sh
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+## 開發模式啟動服務器
 
 ```sh
 pnpm dev
 ```
 
-### Compile and Minify for Production
+## 生產模式構建
 
 ```sh
 pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
 ```
