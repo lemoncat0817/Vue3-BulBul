@@ -29,7 +29,7 @@
 .birdHeaderTop {
   width: 70%;
   height: 30%;
-  background: black;
+  background: #333333;
   position: absolute;
   left: 50%;
   top: 25%;
@@ -40,7 +40,7 @@
 .birdEye {
   width: 12%;
   height: 12%;
-  background: black;
+  background: #333333;
   position: absolute;
   left: 58%;
   top: 45%;
@@ -51,7 +51,7 @@
 .birdMouth {
   width: 20%;
   height: 10%;
-  background: black;
+  background: #333333;
   position: absolute;
   left: 75%;
   top: 32%;
@@ -63,7 +63,7 @@
 .birdHeaderBottom {
   width: 70%;
   height: 20%;
-  background: black;
+  background: #333333;
   position: absolute;
   left: 50%;
   top: 65%;
